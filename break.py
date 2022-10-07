@@ -39,7 +39,7 @@ def main():
     port = int(sys.argv[3])
     times = int(sys.argv[4])
 
-    banner = f"""
+    banner = """
 \t\033[1;31;40m[ ================================================== ]
 \t[ # ]                                            [ # ]
 \t[ # ]\033[1;34;40m  ██████╗░██████╗░███████╗░█████╗░██╗░░██╗\033[1;31;40m  [ # ]
@@ -304,26 +304,23 @@ def main():
         pass
 
   except:
-    print("""\n\n\n
-\t\t\t    ╔╗ ╦═╗╔═╗╔═╗╦╔═
-\t\t\t    ╠╩╗╠╦╝║╣ ╠═╣╠╩╗
-\t\t\t    ╚═╝╩╚═╚═╝╩ ╩╩ ╩
-\t ╔═════════════════════════════════════════════════════╗
-\t ║          UDP           ║ ║           OVH            ║
-\t ║         UDPV2          ║ ║          OVHV2           ║
-\t ║         UDPV3          ║ ║          OVHV3           ║
-\t ║          TCP           ║ ║          OVHV4           ║
-\t ║         TCPV2          ║ ║           DNS            ║
-\t ║         TCPV3          ║ ║          DNSV2           ║
-\t ║         FLOOD          ║ ║          DNSV3           ║
-\t ║        FLOODV2         ║ ║           SYN            ║
-\t ║        FLOODV3         ║ ║          SYNV2           ║
-\t ║        [COMING         ║ ║          SYNV3           ║
-\t ║          SOON]         ║ ║          SYNV4           ║
-\t╔╩════════════════════════╝ ╚══════════════════════════╩╗
-\t║         USAGE : [METHOD] [IP] [PORT] [TIME]           ║
-\t╚═══════════════════════════════════════════════════════╝
-\n\n""")
+    os.system("clear")
+    print(""" Methods:
+----------------------------
+     UDP     OVH
+     UDPV2   OVHV2
+     UDPV3   OVHV3
+     TCP     OVHV4
+     TCPV2   SYN
+     TCPV3   SYNV2
+     FLOOD   SYNV3
+     FLOODV2 SYNV4
+     FLOODV3 DNS
+     [COMING DNSV2
+       SOON] DNSV3
+----------------------------
+[METHOD] [IP] [PORT] [TIMES]
+""")
 
 global times
 
