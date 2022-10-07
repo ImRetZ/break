@@ -53,11 +53,11 @@ def main():
 \n\n\t\t[ × ]=====\033[1;32;40m Code By RetZ\033[1;31;40m =====[ × ]
 \t\t[ × ] \033[1;33;40mCreated At 30 Sep 2022 \033[1;31;40m[ × ]
 \t\t[ × ]========================[ × ]\n\n
-\t\t[ $ ]\033[1;32;40m METHOD      : {method}\033[1;31;40m
-\t\t[ $ ]\033[1;32;40m IP TARGET   : {ip}\033[1;31;40m
-\t\t[ $ ]\033[1;32;40m PORT TARGET : {port}\033[1;31;40m
-\t\t[ $ ]\033[1;32;40m TIMES       : {times}\033[0m
-"""
+\t\t[ $ ]\033[1;32;40m METHOD      : {}\033[1;31;40m
+\t\t[ $ ]\033[1;32;40m IP TARGET   : {}\033[1;31;40m
+\t\t[ $ ]\033[1;32;40m PORT TARGET : {}\033[1;31;40m
+\t\t[ $ ]\033[1;32;40m TIMES       : {}\033[0m
+""".format(method,ip,port,times)
 
     if method == "UDP":
       try:
